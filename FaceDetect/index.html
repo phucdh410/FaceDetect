@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NHẬN DIỆN GƯƠNG MẶT</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <style type="text/css">
+      #container {
+        position: relative;
+        width: 500px;
+        height: 500px;
+      }
+      #container img {
+        object-fit: contain;
+      }
+      #container canvas {
+        position: absolute;
+        object-fit: contain;
+        top: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>NHẬN DIỆN GƯƠNG MẶT</h1>
+    <input type="file" id="file-input" />
+    <div id="container"></div>
+  </body>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/toastify-js"
+  ></script>
+  <script src="./dist/face-api.js"></script>
+  <script src="./script.js"></script>
+</html>
