@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NHẬN DIỆN GƯƠNG MẶT</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <style type="text/css">
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #container {
+        position: relative;
+        width: 500px;
+        height: 500px;
+      }
+      #container img {
+        object-fit: contain;
+      }
+      #container canvas {
+        position: absolute;
+        object-fit: contain;
+        top: 0;
+        left: 0;
+      }
+      canvas {
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <input type="file" id="file-input" /> -->
+    <video id="myVideo" muted autoplay="true" src=""></video>
+    <!-- <div id="container"></div> -->
+  </body>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/toastify-js"
+  ></script>
+  <script src="./dist/face-api.js"></script>
+  <script src="./index.js"></script>
+  <!-- <script src="./script.js"></script> -->
+</html>
